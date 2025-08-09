@@ -4,9 +4,9 @@ function RenderingLists() {
         {title: 'Banana', price: 0.5},
     ];
 
-    const listItems = products.map((product, index) => {
+    const listItems = products.map((product, title) => {
         return (
-            <li key={index}>
+            <li key={title}>
                 {product.title} - ${product.price.toFixed(2)}
             </li>
         );
